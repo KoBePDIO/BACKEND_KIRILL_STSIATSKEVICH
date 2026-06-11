@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TDA - Интернет-магазин</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header"><!-- голова -->
+        <div class="header-top container">
+            <div class="logo">
+                <span class="logo-text">TDA</span>
+            </div>
+            <div class="search-bar">
+               <form action="index.php">
+                    <input type="hidden" name="page" value="search">
+                    <input type="text" name="q" placeholder="Поиск">
+                </form>
+                <button type="submit"><i class="fa-solid fa-search"></i></button>
+            </div>
+           <input type="checkbox" id="burger-toggle" hidden>
+
+<label for="burger-toggle" class="mobile-burger">
+    <i class="fa-solid fa-bars"></i>
+</label>
+
+<div class="mobile-menu">
+    <a href="#">Каталог</a>
+    <a href="#">Молочная продукция</a>
+    <a href="#">Мясная продукция</a>
+    <a href="#">Напитки</a>
+    <a href="#">Бакалея</a>
+    <a href="#">Грибы</a>
+    <a href="#">Крупы</a>
+    <a href="#">Овощи</a>
+    <a href="#">Ягоды</a>
+</div>
+            <div class="header-icons">
+                    <div class="icon-circle"><i class="fa-solid fa-shopping-bag"></i><span class="badge">2</span></div>
+                    <div class="icon-circle"><i class="fa-regular fa-file-alt"></i></div>
+                    <div class="icon-circle"><i class="fa-regular fa-user"></i></div>
+                </div>
+            <div class="location">
+                <i class="fa-regular fa-paper-plane"></i>
+                <div>
+                    <span class="loc-title">Выберите филиал:</span>
+                    <span class="loc-city">г. Владивосток <i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+            </div>
+            <div class="phones">
+                <i class="fa-solid fa-phone"></i>
+                <div class="phone-numbers">
+                    <a href="tel:+71234567890">+7 (123) 456-78-90</a>
+                    <a href="tel:+71234567890">+7 (123) 456-78-90</a>
+                </div>
+            </div>
+            <a href="#" class="btn-write"><i class="fa-regular fa-envelope"></i> Написать нам</a>
+        </div>
+        <nav class="main-nav">
+            <div class="container nav-wrapper">
+                <a href="#" class="catalog-btn"><i class="fa-solid fa-list"></i> Каталог</a>
+                <ul class="nav-links">
+                    <li><a href="#">Молочная продукция</a></li>
+                    <li><a href="#">Мясная продукция</a></li>
+                    <li><a href="#">Напитки</a></li>
+                    <li><a href="#">Бакалея</a></li>
+                    <li><a href="#">Грибы</a></li>
+                    <li><a href="#">Крупы</a></li>
+                    <li><a href="#">Овощи</a></li>
+                    <li><a href="#">Ягоды</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+<section class="simple-gallery container"><!-- ===== ГАЛЕРЕЯ ===== -->
+    <div class="simple-grid">
+        <div class="square-card"><img src="image/bank/1.png"></div>
+       <div class="square-card"><img src="image/bank/2.png"></div>
+        <div class="square-card"><img src="image/bank/3.png"></div>
+         <div class="square-card"><img src="image/bank/4.png"></div>
+          <div class="square-card"><img src="image/bank/5.png"></div>
+           <div class="square-card"><img src="image/bank/6.png"></div>
+            <div class="square-card"><img src="image/bank/7.png"></div>
+        <!-- добавьте сколько нужно -->
+    </div>
+</section>
+    <main>
+        <section class="hero-section container"><!-- ===== ГЛАВНЫЙ БАННЕР / HERO ===== -->
+            <div class="hero-content">
+                <div class="price-block">
+                    <span class="current-price">250 ₽/шт</span>
+                </div>
+                
+                <h1>Корнишоны<br>«Кубаночка»</h1>
+                <span class="subtitle">(1-3 см) 680 г. 1/8</span>
+                <p>Корнишоны "Кубаночка" настоящая находка. Огурчики упругие, довольно плотные, очень хрустящие. Рассол в меру пряный с низким содержанием уксуса. Отлично влияют на пищеварение, повышают аппетит. Среди составляющих огурцов есть калий, который необходим для нормальной работоспособности мышц сердца и почек.</p>
+                <div class="hero-actions">
+                   <a href="index.php?page=add&id=1">В корзину</a>
+                    <a href="#" class="btn-outline">Подробнее</a>
+                </div>
+                  
+            </div>
+            <div class="hero-image-slider">
+                <div class="circle-showcase">
+                    <img src="image/cornish.png" alt="Корнишоны" class="main-product-img">
+                </div>
+                <div class="side-icons">
+                    <div class="icon-circle"><i class="fa-solid fa-shopping-bag"></i><span class="badge">2</span></div>
+                    <div class="icon-circle"><i class="fa-regular fa-file-alt"></i></div>
+                    <div class="icon-circle"><i class="fa-regular fa-user"></i></div>
+                </div>
+                
+            </div>
+        </section>
+        <section class="popular-categories container"><!-- ===== ПОПУЛЯРНЫЕ КАТЕГОРИИ ===== -->
+            <div class="section-header">
+                <h2>Популярные категории</h2>
+                <a href="#" class="view-all">Смотреть все</a>
+            </div>
+            <div class="category-grid">
+                <div class="category-card">
+                    <img src="image/milk.jpg" alt="Молочная"  >
+                    <h3>Молочная продукция</h3>
+                </div>
+                <div class="category-card">
+                    <img src="image/meat.jpg" alt="Мясная">
+                    <h3>Мясная продукция</h3>
+                </div>
+                <div class="category-card">
+                    <img src="image/veg.jpg" alt="Овощи" >
+                    <h3>Овощи</h3>
+                </div>
+                <div class="category-card">
+                    <img src="image/fruits.jpg" alt="Ягоды" >
+                    <h3>Ягоды</h3>
+                </div>
+            </div>
+        </section>
+        <section class="promo-items container">
+            <div class="section-header">
+                <h2>Акционные товары</h2>
+                <a href="#" class="view-all">Смотреть все</a>
+            </div>
+            <div class="promo-content">
+                <div class="promo-text">
+                    <h3>Малина свежемороженая</h3>
+                    <p>Малина - очень вкусная и ароматная ягода. Она обладает жаропонижающим и противовоспалительным эффектом, богата железом, медью и витаминами А, Е, РР, В2. На производстве используется технология шоковой заморозки, что позволяет сохранить вкус, аромат и пользу свежих ягод. В свежем виде эта ягода - настоящее лакомство. Кроме того с ней можно готовить различные десерты и пироги.</p>
+                    <div class="promo-pricing">
+                        <span class="current-price">250 ₽/кг</span>
+                        <span class="old-price">350 ₽/кг</span>
+                    </div>
+                    <div class="hero-actions">
+                        <a href="#" class="btn-primary">В корзину</a>
+                        <a href="#" class="btn-outline">Подробнее</a>
+                    </div>
+                    <div class="slider-controls">
+                        <button class="arrow-btn"><i class="fa-solid fa-arrow-left"></i></button>
+                        <div class="dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <button class="arrow-btn green"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="promo-image">
+                    <img src="image/malina.jpg" alt="Малина">
+                </div>
+            </div>
+        </section>
+        <section class="about-section container"><!-- ===== О КОМПАНИИ ===== -->
+            <div class="about-flex">
+                <div class="about-text">
+                    <h2>О компании</h2>
+                    <p>Ясность нашей позиции очевидна: укрепление и развитие внутренней структуры обеспечивает широкому кругу (специалистов) участие в формировании модели развития. Экономическая повестка сегодняшнего дня прекрасно подходит для реализации экономической целесообразности принимаемых решений. Как принято считать, предприниматели в сети интернет формируют глобальную экономическую сеть и при этом - разоблачены!</p>
+                </div>
+                <div class="about-features">
+                    <div class="feature-card">
+                        <i class="fa-solid fa-tags"></i>
+                        <span>Оптовые цены</span>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fa-solid fa-truck"></i>
+                        <span>Доставка по городу<br>и краю</span>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fa-regular fa-gem"></i>
+                        <span>15 лет на рынке</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="news-section container"><!-- ===== НОВОСТИ ===== -->
+            <div class="section-header">
+                <h2>Новости</h2>
+                <a href="#" class="view-all">Все новости</a>
+            </div>
+            <div class="news-grid">
+                <div class="news-card">
+                    <img src="image/veg.jpg" alt="Овощи">
+                    <div class="news-date">15.12.2021</div>
+                    <h4>«Самое ценное в нашем мире — овощи»</h4>
+                </div>
+                <div class="news-card news-card--highlight">  <!-- вот этот блок выделяется -->
+                    <img src="image/table.jpg" alt="Вкус">
+                    <div class="news-date">15.12.2021</div>
+                    <h4>Чувство вкуса</h4>
+                </div>
+                <div class="news-card">
+                    <img src="image/Cub.jpg" alt="Кубок">
+                    <div class="news-date">15.12.2021</div>
+                    <h4>"TDA" установила новый мировой рекорд Гиннесса</h4>
+                </div>
+            </div>
+            <div class="progress-bar-container">
+                <div class="progress-bar"></div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer-top">
+            <div class="footer-logo">
+                <span class="logo-text">TDA</span>
+            </div>
+            <div class="footer-links">
+                <h4>О компании</h4>
+                <ul>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Пользовательское соглашение</a></li>
+                    <li><a href="#">Политика обработки персональных данных</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Покупателям</h4>
+                <ul>
+                    <li><a href="#">Доставка и оплата</a></li>
+                    <li><a href="#">Как вернуть</a></li>
+                    <li><a href="#">Как заказать</a></li>
+                    <li><a href="#">Программа лояльности</a></li>
+                    <li><a href="#">Вопросы и ответы</a></li>
+                    <li><a href="#">Юридическим лицам</a></li>
+                </ul>
+            </div>
+            <div class="footer-subscribe">
+                <h4>Подписаться на рассылку актуальных новостей:</h4>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Email">
+                    <button type="submit"><i class="fa-regular fa-envelope"></i> Подписаться</button>
+                </form>
+                <div class="footer-contacts">
+                    <p><strong>Заказывайте товары круглосуточно<br>и задавайте вопросы</strong></p>
+                    <a href="tel:88001234567" class="footer-phone">8 800 123-45-67</a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>© Интернет-магазин "TDA"</p>
+            <div class="socials">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-vk"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
