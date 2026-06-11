@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users>
+    <user>
+        <email>client1@test.local</email>
+    </user>
+    <user>
+        <email>client2@test.local</email>
+    </user>
+</users>
